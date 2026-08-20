@@ -1,0 +1,1695 @@
+ 
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NutriWhirlgoss | Eating at the rhythm of your life</title>
+    
+    <meta property="og:title" content="NutriWhirlgoss | Eating at the rhythm of your life" />
+    <meta property="og:image" content="product-images/nutritionist-2026-08-13-1.jpg" />
+    <meta property="og:description" content="The modern pace of life rarely leaves enough time to carefully plan your daily diet, plan your menu, shop" />
+    <meta name="description" content="The modern pace of life rarely leaves enough time to carefully plan your daily diet, plan your menu, shop" />
+    <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap" rel="stylesheet" />
+    <link rel="shortcut icon" href="main.png" type="image/x-icon" />
+    
+    
+     
+    <style>
+          :root{
+            --c-1: linear-gradient(0deg, #44A08D 0%, #093637 47.60%, #010314 65.23%);
+            --c-2: linear-gradient(0deg, #445ca0 0%, #0a0937 47.60%, #010314 65.23%);
+            --c-3: linear-gradient(0deg, #a04444 0%, #370909 47.60%, #010314 65.23%);
+            --c-4: linear-gradient(0deg, #a04470 0%, #370927 47.60%, #010314 65.23%);
+            --c-5: linear-gradient(0deg, #a08a44 0%, #372709 47.60%, #010314 65.23%);
+            --bg: var(--c-1);
+            --d-1: #44A08D;
+            --d-2: #445ca0;
+            --d-3: #a04444;
+            --d-4: #a04470;
+            --d-5: #a08a44;
+            --accent: var(--d-1);
+            --black: #212121;
+            --dark: #010314;
+            --extra-bg: #0F101E;
+            --transition: 0.4s ease-in-out;
+            --white: #fff;
+          }
+
+          body, html{
+            height: 100%;
+          }
+
+          html {
+            scroll-behavior: smooth;
+          }
+
+          body{
+            direction: ltr;
+            font-family: 'Play', sans-serif !important;
+            font-size: 18px;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: var(--dark);
+          }
+
+          button{
+            cursor: pointer;
+          }
+
+          *{
+            box-sizing: border-box;
+          }
+
+          a{
+              text-decoration: none;
+          }
+
+          p {
+            margin-bottom: 16px;
+            font-size: 16px;
+            line-height: 1.5;
+          }
+
+          ul, ol {
+            margin-bottom: 16px;
+            padding-left: 25px;
+          }
+
+          li {
+            margin-bottom: 8px;
+          }
+
+          ul ul, ol ul, ul ol, ol ol {
+            margin-bottom: 0;
+          }
+
+          ul {
+            list-style-type: disc;
+          }
+
+          ol {
+            list-style-type: decimal;
+          }
+
+          img{
+            width: 100%;
+            display: block;
+          }
+
+          .container {
+            max-width: 100%;
+            margin-right: auto;
+            margin-left: auto;
+            padding-right: 15px;
+            padding-left: 15px;
+            position: relative;
+            overflow: hidden;
+          }
+
+          .row-2,
+          .row-3,
+          .row-4,
+          .row-5{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            gap: 17px;
+          }
+
+          .col-2,
+          .col-3,
+          .col-4,
+          .col-5{
+            width: 100%;
+            box-sizing: border-box;
+            flex-grow: 1;
+          }
+
+          .header{
+            padding: 17px 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            color: var(--white);
+          }
+
+          .logo-box{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+          }
+
+          .logo-img{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 55px;
+            height: 55px;
+
+            img{
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+          }
+
+          .logo-title{
+            color: var(--white);
+            font-family: 'Bakbak One', sans-serif;
+            text-transform: uppercase;
+            font-weight: 500;
+            transition: var(--transition);
+            font-size: 22px;
+            color: var(--white);
+          }
+
+          .logo-box:hover .logo-title,
+          .logo-box:focus .logo-title{
+            color: var(--accent);
+          }
+
+          .nav{
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            border-radius: 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 17px;
+            padding: 17px;
+            width: 100%;
+          }
+
+          .nav-item{
+            a{
+              color: var(--white);
+              transition: var(--transition);
+            }
+
+            &:hover > a,
+            &:focus > a{
+              color: var(--accent);
+            }
+          }
+
+          .banner-area{
+            background-size: cover;
+            background-position: center;
+            border-radius: 0 0 20px 20px;
+            position: relative;
+            display: flex;
+            align-items: center;
+            margin: 0  17px;
+            overflow: hidden;
+
+            &::before{
+              content: "";
+              position: absolute;
+              left: 0px;
+              top: 0px;
+              width: 100%;
+              height: 100%;
+              background: var(--bg);
+              border-radius: 0px 0px 20px 20px;
+            }
+          }
+
+          .banner-box{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: var(--white);
+            gap: 17px;
+            position: relative;
+            z-index: 2;
+            padding: 43px 0px;
+          }
+
+          .banner-text{
+            text-align: center;
+            font-size: 26px;
+            font-weight: 500;
+             background: linear-gradient(180deg, var(--white) 0%, var(--accent) 100%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            line-height: 1.5;
+          }
+
+          .banner-shape-1{
+            width: 200px;
+            height: 200px;
+            border-radius: 100%;
+            overflow: hidden;
+            position: absolute;
+            left: -79px;
+            top: 40%;
+            transform: translate(0, -50%) rotate(218deg);
+            background: var(--bg);
+            animation: videoUp 7s linear infinite;
+          }
+          .banner-shape-2{
+            width: 100px;
+            height: 100px;
+            border-radius: 100%;
+            overflow: hidden;
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            animation: videoLeft 5s linear infinite;
+            background: var(--bg);
+            transform: rotate(45deg);
+          }
+
+          @keyframes videoUp{
+            0%{
+              top: 40%;
+            }
+            50%{
+              top: 60%;
+            }
+            100%{
+              top: 40%;
+            }
+          }
+
+          @keyframes videoLeft{
+            0%{
+              right: 10px;
+            }
+            50%{
+              right: 50px;
+            }
+            100%{
+              right: 10px;
+            }
+          }
+
+          .module{
+            padding: 40px 0;
+            color: var(--white);
+          }
+
+          .title{
+            font-size: 26px;
+            background: linear-gradient(180deg, var(--white) 0%, var(--accent) 100%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 0;
+            letter-spacing: -1.5px;
+            text-align: center;
+            margin-bottom:  17px;
+          }
+
+          .serv-row{
+            padding: 10px 0;
+          }
+
+          .serv-box{
+            display: flex;
+            align-items: center;
+            background: var(--extra-bg);
+            border: 1px solid rgba(43 44 56 / 46%);
+            border-radius: 15px;
+            padding:  17px;
+            transition: var(--transition);
+            flex-direction: column;
+            gap: 10px;
+            height: 100%;
+
+            &:hover,
+            &:focus{
+              transform: scale(1.02) translateY(5px);
+              -webkit-transform: scale(1.02) translateY(5px);
+            }
+          }
+
+          .serv-text-box{
+            flex-grow: 1;
+          }
+
+          .serv-img-box{
+            flex-grow: 1;
+          }
+
+          .serv-img{
+            width: 150px;
+            height: 150px;
+
+            img{
+              width: 100%;
+              height: 100%;
+              object-fit: contain;
+            }
+          }
+
+          .serv-text{
+            line-height:1.5;
+            text-align: center;
+          }
+
+          .main{
+            border-radius: 20px 20px 0 0;
+            position: relative;
+            display: flex;
+            align-items: center;
+            margin: 0  17px;
+            overflow: hidden;
+
+            &::before{
+              content: "";
+              position: absolute;
+              left: 0px;
+              top: 0px;
+              width: 100%;
+              height: 100%;
+              background: var(--bg);
+              border-radius: 20px 20px 0 0;
+              transform: rotate(180deg);
+            }
+
+            .container{
+              position: relative;
+              z-index: 2;
+            }
+
+            .price,
+            .title{
+              -webkit-text-fill-color: inherit;
+            }
+          }
+
+          .main-img{
+            width: 100%;
+            height: auto;
+            margin: 0 auto;
+
+            img{
+              width: 100%;
+              height: 100%;
+              object-fit: contain;
+            }
+          }
+
+          .main-shape-1{
+            width: 450px;
+            height: 450px;
+            border-radius: 100%;
+            overflow: hidden;
+            position: absolute;
+            left: -79px;
+            top: 40%;
+            transform: translate(0, -50%) rotate(225deg);
+            background: var(--bg);
+          }
+          .main-shape-2{
+            width: 200px;
+            height: 200px;
+            border-radius: 100%;
+            overflow: hidden;
+            position: absolute;
+            right: 9px;
+            top: 40px;
+            transform: rotate(45deg);
+            background: var(--bg);
+          }
+          .main-shape-3{
+            width: 500px;
+            height: 500px;
+            border-radius: 100%;
+            overflow: hidden;
+            position: absolute;
+            right: -87px;
+            bottom: -42px;
+            transform: rotate(133deg);
+            background: var(--bg);
+          }
+
+          .bazaTarif-box{
+            display: flex;
+            background: var(--extra-bg);
+            border: 1px solid rgba(43 44 56 / 46%);
+            border-radius: 15px;
+            padding: 20px;
+            transition: var(--transition);
+            flex-direction: column;
+            gap: 10px;
+          }
+
+          .bazaTarif-list{
+            display: flex;
+            flex-direction: column;
+          }
+
+          .bazaTarif-item{
+            border-bottom: 1px solid rgba(43 44 56 / 46%);
+            padding: 10px 0;
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            align-items: center;
+            transition: var(--transition);
+
+            span{
+              width: 10px;
+              height: 10px;
+              border-radius: 100%;
+              overflow: hidden;
+              background: var(--bg);
+            }
+
+            &:hover,
+            &:focus{
+              transform: scale(1.02);
+              -webkit-transform: scale(1.02);
+            }
+          }
+
+          .bazaTarif-item:last-child{
+            border-bottom: none;
+          }
+
+          .bazaTarif-name{
+            font-size: 26px;
+            letter-spacing: -1.5px;
+            text-align: start;
+            margin-bottom: 30px;
+            margin-top: 30px;
+          }
+
+          .bazaTarif-price{
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            align-items: center;
+
+            span{
+              position: relative;
+              width: 30px;
+              height: 30px;
+              background-color:  rgba(255 255 255 / 11%);
+              border-radius: 100%;
+              display: block;
+
+              &::before{
+                position: absolute;
+                content: '';
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 15px;
+                height: 15px;
+                border-radius: 100%;
+                overflow: hidden;
+                background: var(--bg);
+              }
+
+            &::after{
+              position: absolute;
+              content: '';
+              top: -55px;
+              height: 50px;
+              left: 50%;
+              width: 1px;
+              background-color: rgb(72 74 87 / 47%);
+            }
+            }
+          }
+
+          .qa,
+          .workers,
+          .form-module{
+            border-radius: 0 0 20px 20px;
+            position: relative;
+            display: flex;
+            align-items: center;
+            margin: 0 17px;
+            overflow: hidden;
+
+            &::before{
+              content: "";
+              position: absolute;
+              left: 0px;
+              top: 0px;
+              width: 100%;
+              height: 100%;
+              background: var(--bg);
+              border-radius: 20px 20px 0 0;
+            }
+
+            .container{
+              position: relative;
+              z-index: 2;
+            }
+          }
+
+          .row-70{
+            display: flex;
+            flex-direction: column;
+            gap: 17px;
+          }
+
+          .col-70,
+          .col-30{
+            width: 100%;
+            box-sizing: border-box;
+          }
+
+          .form-wr{
+            background: var(--extra-bg);
+            border: 1px solid rgba(43 44 56 / 46%);
+            padding: 57px 43px 43px;
+            text-align: center;
+            border-radius: 15px;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+          }
+
+          .form-video{
+            border-radius: 15px;
+            border: 1px solid rgba(43 44 56 / 46%);
+            overflow: hidden;
+            width: 100%;
+            height: 100%;
+
+            video{
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+          }
+
+          .form{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+          }
+
+          .input-main--containeritem,
+          .textarea-main--containeritem{
+            color: #fff;
+            width: 100%;
+            border: 1px solid rgb(104 105 121);
+            border-radius: 15px;
+            background-color: transparent;
+            padding: 10px  17px;
+          }
+
+          .privacy{
+            color: var(--white);
+            transition: var(--transition);
+
+            &:hover,
+            &:focus{
+              color: var(--accent);
+            }
+          }
+
+          .employee-box{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 17px;
+          }
+
+          .employee-img{
+            border-radius: 100%;
+            overflow: hidden;
+            width: 100%;
+            height: 100%;
+            border: 7px solid rgba(255 255 255 / 11%);
+
+            img{
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+          }
+
+          .employee-name{
+            text-align: center;
+            font-weight: 500;
+          }
+
+          .employee-job{
+            text-align: center;
+            color: rgba(255, 255, 255, 0.445);
+          }
+
+          .accordion {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 17px;
+        }
+
+        .accordion-item {
+          background-color: var(--extra-bg);
+          border: 1px solid rgba(43 44 56 / 46%);
+          border-radius: 15px;
+          overflow: hidden;
+        }
+
+        .accordion-header {
+            cursor: pointer;
+            text-align: left;
+            width: 100%;
+            padding:  17px;
+            border-radius: 15px;
+            color: var(--tg-white);
+            background-color: transparent;
+            font-weight: 500;
+            letter-spacing: -0.48px;
+            position: relative;
+            transition: var(--transition);
+            border: none;
+            font-size: 18px;
+        }
+
+        .accordion-header:hover {
+            transform: scale(1.02);
+        }
+        .accordion-content {
+            padding: 0  17px;
+            max-height: 0;
+            overflow: hidden;
+            color: #CBD0D4;
+            transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+        }
+        .accordion-content.show {
+            padding: 0  17px;
+            max-height: max-content;
+            font-size: 18px;
+            margin-bottom: 0;
+            background: var(--bg);
+        }
+
+        .hw-box{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 10px;
+          flex-direction: column;
+          border-radius: 15px;
+          background: linear-gradient(320deg, rgba(255, 255, 255, 0.14) 0%, rgba(255, 255, 255, 0.00) 100%);
+          box-shadow: 0px 16px 18px 0px rgba(1, 12, 50, 0.10);
+          display: flex;
+          align-items: center;
+          padding: 25px;
+          transition: var(--transition);
+
+          &:hover,
+          &:focus{
+            transform: scale(1.02) translateY(5px);
+          }
+        }
+
+        .hw-img{
+          padding: 30px 30px;
+          width: 170px;
+          height: auto;
+
+          img{
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+          }
+        }
+
+        .hw-row{
+          padding: 10px 0;
+        }
+
+        .footer{
+          border-radius: 20px 20px 0 0;
+          position: relative;
+          margin: 0 17px;
+          overflow: hidden;
+          padding-top: 43px;
+
+          &::before{
+            content: "";
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            width: 100%;
+            height: 100%;
+            background: var(--bg);
+            border-radius: 0 0 20px 20px;
+            transform: rotate(180deg);
+          }
+
+          .container{
+            position: relative;
+            z-index: 2;
+          }
+        }
+
+        .footer-bottom{
+          position: relative;
+
+          &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(225deg, var(--black) 0%, rgba(255, 255, 255, 0.45) 54.98%, rgba(1, 3, 20, 0.99) 100%);
+          }
+        }
+
+        .copyright{
+          display: flex;
+          flex-direction: row;
+          gap: 7px;
+          flex-wrap: wrap;
+          align-items: center;
+          justify-content: center;
+          padding: 17px;
+          color: var(--white);
+
+          p{
+            margin: 0;
+          }
+        }
+
+        .footer-privacy{
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          align-items: center;
+          justify-content: center;
+          gap: 17px;
+          padding: 17px 0;
+        }
+
+        .footer-link{
+          a{
+            color: var(--white);
+            transition: var(--transition);
+          }
+
+          &:hover > a,
+          &:focus > a{
+            color: var(--accent);
+          }
+        }
+
+        .footer-logo{
+          margin-bottom: 30px;
+        }
+
+        .privacy-text{
+          word-break: break-all;
+          overflow: hidden;
+        }
+
+        .contact-box{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          background: var(--extra-bg);
+          justify-content: center;
+          gap: 17px;
+          text-align: center;
+          border-radius: 30px;
+          margin-bottom: 30px;
+          border: 1px solid rgba(43 44 56 / 46%);
+          padding: 30px;
+          height: 100%;
+
+          a{
+            color: var(--white);
+            transition: var(--transition);
+            font-weight: 500;
+            word-break: break-all;
+
+            &:hover,
+            &:focus{
+              color: var(--accent);
+            }
+          }
+
+        }
+
+        .contact-icon{
+          width: 60px;
+          height: 60px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 50%;
+          border: 1px solid #292A37;
+          font-size: 20px;
+          color: var(--white);
+          line-height: 1.5;
+
+          svg{
+            width: 25px;
+            height: 25px;
+            object-fit: contain;
+          }
+        }
+
+        .map{
+          margin: 20px 0;
+          width: 100%;
+          height: 400px;
+          border-radius: 15px;
+          overflow: hidden;
+          border: 1px solid #292A37;
+
+          iframe{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border: none;
+          }
+        }
+
+        .shedule-item{
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+          @media (min-width: 576px) {
+            .container {
+              max-width: 540px;
+            }
+
+            .row-5{
+              flex-direction: row;
+            }
+
+            .col-5{
+              width: calc(50% - 17px);
+            }
+
+            .nav{
+              width: auto;
+              flex-direction: row;
+              flex-wrap: wrap;
+            }
+
+            .serv-box{
+              flex-direction: row;
+            }
+
+            .employee-img{
+              width: 170px;
+              height: 170px;
+            }
+
+            .hw-box{
+              flex-direction: row;
+
+              &>div{
+                flex-grow: 1;
+                width: 50%;
+              }
+            }
+          }
+
+          @media (max-width: 767px){
+            .banner-shape-1,
+            .banner-shape-2{
+              display: none;
+            }
+
+            .main-shape-1,
+            .main-shape-3,
+            .main-shape-2{
+              display: none;
+            }
+
+            .form-col{
+              display: none;
+            }
+            .form-wr {
+              padding: 20px;
+            }
+          }
+
+          @media (min-width: 768px){
+            .container {
+              max-width: 720px;
+            }
+
+            .row-2,
+            .row-3,
+            .row-4{
+              flex-direction: row;
+            }
+
+            .col-2,
+            .col-3,
+            .col-4{
+              width: calc(50% - 17px);
+            }
+
+            .col-5{
+              width: calc((100% / 3) - 17px);
+            }
+
+            .banner-text,
+            .title{
+              font-size: 32px;
+            }
+
+
+            .serv-box{
+              flex-direction: column;
+            }
+
+            .main-img{
+              width: 400px;
+              height: 300px;
+            }
+
+            .row-70{
+              flex-direction: row;
+            }
+
+            .col-70{
+              width: calc(70% - 17px);
+              flex-grow: 1;
+            }
+            .col-30{
+              width: calc(30% - 17px);
+              flex-grow: 1;
+            }
+          }
+
+          @media (min-width: 992px){
+            .container {
+              max-width: 960px;
+            }
+
+            .col-3{
+              width: calc((100% / 3) - 17px);
+            }
+
+            .col-4{
+              width: calc(25% - 17px);
+            }
+
+            .col-5{
+              width: calc((100% / 5) - 17px);
+            }
+
+            .header{
+              flex-direction: row;
+              justify-content: space-between;
+            }
+
+            .logo-title{
+              font-size: 28px;
+            }
+
+            .banner-box{
+              padding: 100px 0 !important;
+            }
+
+            .banner-area{
+              padding: 140px 0px 120px;
+            }
+
+            .banner-text,
+            .title{
+              font-size: 46px;
+            }
+
+            .serv-box{
+              flex-direction: row;
+              padding: 40px;
+            }
+
+            .main-img{
+              width: 500px;
+              height: 400px;
+            }
+
+            .banner-shape-1{
+              width: 400px;
+              height: 400px;
+            }
+
+            .banner-shape-2{
+              width: 200px;
+              height: 200px;
+            }
+
+            .module{
+              padding: 100px 0;
+            }
+
+            .bazaTarif-price span::after{
+              top: -75px;
+              height: 70px;
+            }
+
+            .accordion-header {
+              padding: 40px 50px;
+            }
+
+            .accordion-content {
+              padding: 0 50px;
+            }
+            .accordion-content.show {
+              padding: 40px 50px;
+            }
+          }
+
+          @media (min-width: 1200px){
+            .container {
+              max-width: 1140px;
+            }
+
+            .employee-img{
+              width: 200px;
+              height: 200px;
+            }
+          }
+
+          .button-1 {
+            display: inline-block;
+            padding: 13px 17px;
+            border-radius: 10px;
+            border: 1px solid var(--white);
+            position: relative;
+            overflow: hidden;
+            transition: all 0.5s ease-in;
+            z-index: 1;
+            text-align: center;
+          }
+
+          .button-1::before,
+          .button-1::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            width: 0;
+            height: 100%;
+            transform: skew(15deg);
+            transition: all 0.5s;
+            overflow: hidden;
+            z-index: -1;
+          }
+
+          .button-1::before {
+            left: -10px;
+            background: #124238;
+          }
+
+          .button-1::after {
+            right: -10px;
+            background: var(--accent);
+          }
+
+          .button-1:hover::before,
+          .button-1:hover::after {
+            width: 58%;
+          }
+
+          .button-1:hover span {
+            color: #73edd5 ;
+            transition: 0.3s;
+          }
+
+          .button-1 span {
+            color: var(--white);
+            font-size: 18px;
+            transition: all 0.3s ease-in;
+          }
+
+          .button-2 {
+            padding: 13px 18px;
+            border-radius: 5px;
+            border: 5px solid rgb(255, 255, 255);
+            cursor: pointer;
+            filter: drop-shadow(0px 0px 10px rgb(255, 255, 255));
+            animation: flickering 2s linear infinite both;
+            text-transform: uppercase;
+            background-color: rgb(83, 82, 82);
+            color: rgb(234, 234, 234);
+            font-weight: 500;
+            transition: 0.6s;
+            box-shadow: 0px 0px 60px #1f4c65;
+            display: inline-block;
+            text-align: center;
+            margin-top: 20px;
+          }
+
+          @keyframes flickering {
+            0%,
+            100% {
+              opacity: 1;
+            }
+
+            41.99% {
+              opacity: 1;
+            }
+
+            42% {
+              opacity: 0;
+            }
+
+            43% {
+              opacity: 0;
+            }
+
+            43.01% {
+              opacity: 1;
+            }
+
+            47.99% {
+              opacity: 1;
+            }
+
+            48% {
+              opacity: 0;
+            }
+
+            49% {
+              opacity: 0;
+            }
+
+            49.01% {
+              opacity: 1;
+            }
+          }
+
+        .button-2 span {
+          font-size: 1.2rem;
+        }
+
+        .button-2:hover {
+          background-color: black;
+          border-radius: 0;
+        }
+
+        .button-3 {
+          text-transform: uppercase;
+          letter-spacing: 0.1em;
+          padding: 10px 30px;
+          transition: 0.5s;
+          position: relative;
+          font-size: 17px;
+          background: #333;
+          border: none;
+          color: #fff;
+          display: inline-block;
+          margin-top: 20px;
+          text-align: center;
+        }
+
+        .button-3:hover {
+          letter-spacing: 0.25em;
+          background: #ff1867;
+          color: #ff1867;
+          box-shadow: 0 0 45px #ff1867;
+        }
+
+        .button-3::before {
+          content: '';
+          position: absolute;
+          inset: 2px;
+          background: #222222;
+        }
+
+        .button-3 span {
+          position: relative;
+          z-index: 1;
+        }
+
+        .button-3 i {
+          position: absolute;
+          inset: 0;
+          display: block;
+        }
+
+        .button-3 i::before {
+          content: '';
+          position: absolute;
+          border: 2px solid #ff1867;
+          width: 7px;
+          height: 4px;
+          top: -3.5px;
+          left: 80%;
+          background: #222222;
+          transform: translateX(-50%);
+          transition: 0.5s;
+        }
+
+        .button-3:hover i::before {
+          width: 20px;
+          left: 20%;
+        }
+
+        .button-3 i::after {
+          content: '';
+          position: absolute;
+          border: 2px solid #ff1867;
+          width: 7px;
+          height: 4px;
+          bottom: -3.5px;
+          left: 20%;
+          background: #222222;
+          transform: translateX(-50%);
+          transition: 0.5s;
+        }
+
+        .button-3:hover i::after {
+          width: 20px;
+          left: 80%;
+        }
+
+        .button-4 {
+          cursor: pointer;
+          border-radius: 5px;
+          color: rgb(219, 218, 218);
+          border-style: solid;
+          background-color: transparent;
+          border-color: rgb(219, 218, 218);
+          padding: 12px 15px;
+          transition: 0.2s ease;
+          text-transform: uppercase;
+          border-width: 2px;
+          font-weight: 500;
+          font-size: 18px;
+          letter-spacing: 2px;
+          display: inline-block;
+          text-align: center;
+          margin-top: 20px;
+        }
+
+        .button-4:hover {
+          color: rgb(247, 247, 247);
+          background-color: var(--accent);
+          border-color: var(--accent);
+          text-shadow: 0 0 50px white, 0 0 20px white, 0 0 15px white;
+          box-shadow: 0 0 50px var(--accent), 0 0 30px var(--accent),
+            0 0 60px var(--accent), 0 0 120px var(--accent);
+          font-size: 20px;
+          letter-spacing: 3px;
+          text-align: center;
+          display: inline-block;
+          margin-top: 20px;
+        }
+
+        .button-5 {
+          background-color: #eaf2f8;
+          border: 2px solid #ddd;
+          color: #000;
+          padding: 15px 30px;
+          cursor: pointer;
+          border-radius: 5px;
+          font-size: 16px;
+          position: relative;
+          overflow: hidden;
+          transition: all 0.3s ease;
+          display: inline-block;
+          text-align: center;
+          margin-top: 20px;
+        }
+
+        .button-5:before {
+          content: "";
+          position: absolute;
+          right: 0;
+          bottom: 0;
+          width: 0;
+          height: 0px;
+          background-color: var(--accent);
+          box-shadow: 0 0 40px rgba(255, 255, 255, 0.4);
+          transition: all 0.5s ease;
+        }
+
+        .button-5:hover {
+          background-color: #ddd;
+          border-color: var(--accent);
+        }
+
+        .button-5:hover:before {
+          height: 5%;
+          width: 100%;
+          animation: wave-animation 0.5s linear forwards;
+        }
+
+        @keyframes wave-animation {
+          to {
+            right: 100%;
+          }
+        }
+
+      .button-5 span {
+        position: relative;
+        z-index: 1;
+      }
+    </style>
+    
+  </head>
+
+  <body>
+
+    
+
+    <div class="container">
+      <div class="header">
+        <a href="./" class="logo-box">
+          <div class="logo-img">
+            <img src="main.png"  />
+          </div>
+          <div class="logo-title">NutriWhirlgoss</div>
+        </a>
+        <div class="nav">
+          <div class="nav-item">
+            <a href="./">Home</a>
+          </div>
+          <div class="nav-item">
+            <a href="./#section1">Our Services</a>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="banner-area">
+      <div class="container transactionz-tag">
+        <div class="banner-box">
+          <div class="banner-text">Welcome to NutriWhirlgoss, your trusted partner in personalized nutrition solutions. Our expert team is dedicated to helping you achieve optimal health through tailored plans that fit your lifestyle and goals. Start your journey to better wellness with guidance based on science and compassion.</div>
+          
+        </div>
+      </div>
+      <div class="banner-shape-1"></div>
+      <div class="banner-shape-2"></div>
+    </div>
+    
+
+    <div class="module" id="section1">
+      <div class="container">
+        <div class="title">Empowering your health through expert nutritional guidance tailored just for you.</div>
+        <div class="row-2 serv-row">
+          <div class="col-2">
+            <div class="serv-box">
+              <div class="serv-text-box">
+                <div class="serv-text">Personalized Nutrition Plans Customized meal plans designed to meet your unique dietary needs, preferences, and health objectives for sustainable results.</div>
+              </div>
+              <div class="serv-img-box">
+                <div class="serv-img">
+                  <img src="graphics/benefit-list-q900.svg"  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="serv-box">
+              <div class="serv-text-box">
+                <div class="serv-text">Weight Management Support Comprehensive strategies combining nutrition advice and lifestyle coaching to help you reach and maintain a healthy weight.</div>
+              </div>
+              <div class="serv-img-box">
+                <div class="serv-img">
+                  <img src="graphics/benefit-list-q901.svg"  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="serv-box">
+              <div class="serv-text-box">
+                <div class="serv-text">Nutritional Counseling for Chronic Conditions Specialized guidance to support management of conditions like diabetes, hypertension, and digestive disorders through diet.</div>
+              </div>
+              <div class="serv-img-box">
+                <div class="serv-img">
+                  <img src="graphics/benefit-list-q902.svg"  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="serv-box">
+              <div class="serv-text-box">
+                <div class="serv-text">Sports Nutrition Optimized nutritional programs to enhance athletic performance, recovery, and overall energy levels.</div>
+              </div>
+              <div class="serv-img-box">
+                <div class="serv-img">
+                  <img src="graphics/benefit-list-q903.svg"  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="module main">
+      <div class="container">
+        <div class="title">Eating at the rhythm of your life</div>
+         
+        <div class="main-img btncd-icon">
+          <img src="product-images/nutritionist-2026-08-13-1.jpg" alt="Eating at the rhythm of your life" />
+        </div>
+        <div class="main-text"><p>The modern pace of life rarely leaves enough time to carefully plan your daily diet, plan your menu, shop for groceries, and prepare several healthy meals. Work, meetings, business trips, travel, family, projects, and dozens of daily tasks often force us to choose food based on <strong>what's quickest and most convenient</strong> .</p><p> But taking care of your nutrition doesn't have to be just another chore on your schedule.</p><p> <strong>Our company offers nutritionist services for busy people</strong>, focusing on simple, clear, and realistic solutions that can be used in everyday life: at the office, on the road, while traveling, when ordering delivery, or when visiting cafes and restaurants.</p><p> The main goal is to help you structure your diet so that it fits your lifestyle, rather than requiring you to completely change it for the sake of the “perfect diet.”</p><h2> When time is short, system is especially important</h2><p> It's a familiar situation: in the morning you need to quickly get ready and leave the house, during the day one meeting follows another, a full lunch is constantly postponed, and in the evening you want to order something ready-made and finally relax.</p><p> In such conditions, even the best intentions easily give way to convenience.</p><p> That's why working with a nutritionist isn't built around complex rules and strict restrictions, but rather around <strong>creating a convenient nutrition system that can be integrated into real life</strong> .</p><p> Instead of a question:</p><p> <em>"How can I eat perfectly every day?"</em></p><p> We propose to look for an answer to a much more practical question:</p><p> <strong>"How can I organize my meals so that healthy and suitable choices are as simple as possible?"</strong></p><p> This is a completely different approach.</p><p> It allows you to avoid fighting your own schedule, but to take its peculiarities into account and find solutions in advance for situations that recur every day.</p><h2> Office Dining: Convenient, Fast, and Well-Designed</h2><p> The workday often becomes the main test for the usual eating regime.</p><p> Meetings drag on, lunch is only twenty minutes away, nearby dining options are limited, and the office kitchen is stocked with only occasional snacks. As a result, people either skip meals or choose the first available dish.</p><p> A nutritionist will help you develop <strong>a clear nutrition strategy for your workday</strong> .</p><p> These could include ideas for breakfast before work, food options that are easy to take with you, recommendations for choosing a business lunch, suitable food combinations in a cafeteria or cafe, and simple snack options that can be kept on hand.</p><p> The goal is not to come to the office with containers for the entire day if that format is inconvenient for you.</p><p> On the contrary, it is important to find a solution that will be comfortable for your work rhythm.</p><h2> Business trips and travel without food chaos</h2><p> Traveling often completely changes your usual routine.</p><p> Airports, train stations, hotels, long journeys, early departures and late returns can significantly complicate the organization of meals.</p><p> A nutritionist will help you plan <strong>simple travel and business trip plans</strong> in advance: what to pack, what to snack on while traveling, how to navigate hotel menus, what to choose for breakfast, and how to organize your day if you don't know where you'll be able to have lunch.</p><p> This type of preparation is especially valuable for people who travel frequently for work and don't want to have to re-solve the same issues every time.</p><p> Instead of dozens of rules, there are now a few clear guidelines that are easy to use in almost any situation.</p><h2> Food delivery can also be part of a well-thought-out diet.</h2><p> Ordering ready-made food is normal.</p><p> Moreover, for someone with a busy schedule, delivery can be one of the most convenient ways to organize food.</p><p> It is only important to understand <strong>how to choose dishes and combine them with each other</strong> .</p><p> A nutritionist can help you understand what to look for when ordering food, which food categories can form a good basis for a regular menu, and how to make your regular order more balanced without complicated calculations.</p><p> You can also create your own list of tried and tested options: favorite restaurants, suitable dishes, and several ready-made combinations for different occasions.</p><p> And then in the evening after a busy day you won’t have to waste your energy endlessly studying the menu.</p><p> You just open the app and know which options are right for you.</p><p> <strong>Fewer decisions - more convenience.</strong></p><h2> Cafes, restaurants and meeting with friends remain a part of life</h2><p> Catering doesn't have to mean giving up restaurants, meetings, holidays and spontaneous dinners.</p><p> Food is more than just a set of ingredients. It's also pleasure, communication, culture, family traditions, and an important part of social life.</p><p> Therefore, one of the nutritionist's tasks is to teach a person <strong>to confidently navigate the menu and make decisions independently</strong>, without the need to constantly follow a rigid plan.</p><p> How to choose breakfast in a cafe?</p><p> What to order for a business lunch?</p><p> How to put together a complete meal if the menu is unfamiliar?</p><p> What should I do if I have a restaurant planned for the evening?</p><p> Instead of prohibitions, a person receives clear principles that can be adapted to circumstances.</p><p> And this gives much more freedom.</p><h2> Not another diet, but solutions for real life</h2><p> We believe that recommendations only work when they can actually be used.</p><p> That's why our service focuses on <strong>your lifestyle, schedule and daily habits</strong> .</p><p> Not an abstract “ideal diet.”</p><p> Not a menu that requires spending hours at the stove.</p><p> Not dozens of new rules that are difficult to follow after just a week.</p><p> But it is a practical system.</p><p> A nutritionist helps you look at your typical day as a whole and identify where the main challenges arise: skipped breakfasts, too long breaks between meals, lack of suitable food at the office, impulsive evening orders, or confusion when choosing food outside the home.</p><p> After this, you can select specific solutions for each situation.</p><p> Sometimes small changes are more beneficial than a major overhaul of your entire lifestyle.</p><h2> An individual approach instead of universal advice</h2><p> Each person has his own rhythm.</p><p> Some people work from the office five days a week. Some are constantly moving between meetings. Some travel a lot. Some work remotely but have virtually no time to cook.</p><p> Therefore, there is no universal menu for everyone.</p><p> Working with a nutritionist allows you to take into account <strong>your personal schedule, habits, preferences, and everyday capabilities</strong> .</p><p> As a result, the recommendations become not theoretical, but applicable.</p><p> Together with a specialist, you can create your own set of solutions:</p><ul><li> convenient breakfast options;</li><li> office lunch ideas;</li><li> suitable snacks;</li><li> food options on the road;</li><li> landmarks for restaurants and cafes;</li><li> scenarios for business trips;</li><li> principles of choosing delivery;</li><li> basic set of products for the home;</li><li> A few simple dishes for when you're really short on time.</li></ul><p> Gradually, the question <strong>“What should I eat today?”</strong> ceases to require constant effort.</p><p> A system appears that is easy to use.</p><h2> Taking care of your nutrition can be simple</h2><p> We suggest not striving for perfection, but making nutrition <strong>an understandable and comfortable part of everyday life</strong> .</p><p> No need to give up business lunches.</p><p> Without the feeling that every trip disrupts your routine.</p><p> Without hours of cooking.</p><p> Without complex schemes that cannot be combined with a busy schedule.</p><p> Instead, practical solutions tailored to your day.</p><p> <strong>Office. Delivery. Business trip. Restaurant. Road trip. Busy work week.</strong></p><p> For each of these situations, you can create a convenient scenario in advance.</p><p> This is our philosophy: <strong>well-organized nutrition should help you live a rich life, not complicate it.</strong></p><h1> Find your convenient meal plan</h1><p> If you'd like to pay more attention to your diet but aren't ready to turn nutrition into a separate project, a consultation with a nutritionist will help you start with what's most important—your real life.</p><p> Together with a specialist, you can identify challenging issues, find convenient solutions, and create a system that will work <strong>not only at home on a quiet day, but also when your calendar is full of meetings, you have a trip ahead, and you only have ten minutes to cook dinner</strong> .</p><p> Because the modern approach to nutrition is not about trying to do everything perfectly every day.</p><p> This is the ability to make <strong>the right choice easier, clearer and more accessible in any circumstances</strong> .</p><p> <strong>Your schedule may be complex. Nutrition is optional.</strong></p><p> Our company will help you organize it so that self-care fits naturally into your normal rhythm of life.</p></div>
+      </div>
+      <div class="main-shape-1"></div>
+      <div class="main-shape-2"></div>
+      <div class="main-shape-3"></div>
+    </div>
+
+    <div class="module hw">
+      <div class="container">
+        <div class="title">From Idea to Implementation: The Journey of Our Healthy Food</div>
+        <div class="row-3 hw-row">
+          <div class="col-3">
+            <div class="hw-box">
+              <div class="hw-text">Initial consultation to understand your health status and goals.</div>
+              <div class="hw-img">
+                <img src="graphics/benefit-list-q903.svg"  />
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="hw-box">
+              <div class="hw-text">Development of a personalized nutrition plan tailored to your needs.</div>
+              <div class="hw-img">
+                <img src="graphics/benefit-list-q905.svg"  />
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="hw-box">
+              <div class="hw-text">Regular follow-ups to monitor progress and make necessary adjustments.</div>
+              <div class="hw-img">
+                <img src="graphics/benefit-list-q906.svg"  />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="module qa" id="qa">
+      <div class="container">
+        <div class="title">Frequently Asked Questions</div>
+        <div class="accordion">
+          <div class="accordion-item">
+            <button class="accordion-header">How do I start working with a nutritionist?</button>
+            <div class="accordion-content">
+              <p>Begin by scheduling a consultation where we assess your health goals and create a personalized nutrition plan.</p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-header">Is the nutrition plan suitable for people with allergies?</button>
+            <div class="accordion-content">
+              <p>Yes, all plans are tailored to accommodate food allergies and intolerances to ensure safety and effectiveness.</p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-header">How often should I update my nutrition plan?</button>
+            <div class="accordion-content">
+              <p>We recommend reviewing your plan every 4 to 6 weeks to adjust based on your progress and changing needs.</p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-header">Can nutrition consulting help with chronic disease management?</button>
+            <div class="accordion-content">
+              <p>Absolutely, proper nutrition is a key component in managing many chronic conditions and improving quality of life.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+     
+    
+    
+    <div class="module form-module" id="form">
+      <div class="container">
+        <div class="row-70">
+          <div class="col-70">
+            <div class="form-wr">
+              <div class="title">Write to us</div>
+              <form class="form" action="thanks-reply.php" method="post">
+                 <label for="main--containeritem-name">Enter your name</label><input class="input-main--containeritem" id="main--containeritemname" type="text" name="namedefault-field" required> <label for="main--containeritem-phone">Enter Your Phone Number</label><input name="phonedefault-field" class="input-main--containeritem" id="main--containeritem-phone" type="tel" required> <label for="main--containeritem-email">Email Address</label><input name="emaildefault-field" class="input-main--containeritem" id="main--containeritem-email" type="email" required>
+                <div class="com-form-checkbox">
+                  <input class="com-checkbox" type="checkbox" required />
+                  <label for="checkbox">
+                    I accept
+                    <a class="privacy" href="privacyPolicy.html">Privacy policy</a>
+                  </label>
+                </div>
+                <div class="form-btn">
+                  <button type="submit" class="btn button-1">
+                    <span>Request a specialist consultation</span>
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="col-30 form-col">
+            <div class="form-video">
+              <video
+                class="video-player"
+                src="graphics/intro-video-1920x10800.mp4"
+                autoplay=""
+                muted="muted"
+                loop=""
+                playsinline=""
+                controlslist="nodownload"
+              ></video>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+     
+    <div class="module workers" id="workers">
+      <div class="container">
+        <div class="title">Our People</div>
+        <div class="row-5">
+          <div class="col-5">
+            <div class="employee-box">
+              <div class="employee-img">
+                <img src="graphics/avatar-2026-08-12_08-33-0.webp"  />
+              </div>
+              <div class="employee-name">Jennifer Adams</div>
+              <div class="employee-job">Nutritionist</div>
+            </div>
+          </div>
+          <div class="col-5">
+            <div class="employee-box">
+              <div class="employee-img">
+                <img src="graphics/male-q80-0.webp"  />
+              </div>
+              <div class="employee-name">James Anderson</div>
+              <div class="employee-job">Dietitian</div>
+            </div>
+          </div>
+          <div class="col-5">
+            <div class="employee-box">
+              <div class="employee-img">
+                <img src="graphics/avatar-2026-08-12_08-33-1.webp"  />
+              </div>
+              <div class="employee-name">Patricia Brooks</div>
+              <div class="employee-job">Health Coach</div>
+            </div>
+          </div>
+          <div class="col-5">
+            <div class="employee-box">
+              <div class="employee-img">
+                <img src="graphics/male-q80-1.webp"  />
+              </div>
+              <div class="employee-name">Michael Bennett</div>
+              <div class="employee-job">Wellness Consultant</div>
+            </div>
+          </div>
+          <div class="col-5">
+            <div class="employee-box">
+              <div class="employee-img">
+                <img src="graphics/male-q80-2.webp"  />
+              </div>
+              <div class="employee-name">David Carter</div>
+              <div class="employee-job">Sports Nutritionist</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+
+
+
+
+    
+    
+    
+    <div class="footer review-overlaymn ">
+      <div class="container">
+        <a href="./" class="logo-box footer-logo">
+          <div class="logo-img">
+            <img src="main.png"  />
+          </div>
+          <div class="logo-title">NutriWhirlgoss</div>
+        </a>
+        <div class="footer-privacy">
+          <div class="footer-link">
+            <a href="privacyPolicy.html"> Privacy policy</a>
+          </div>
+          <div class="footer-link">
+            <a href="terms-of-service.html"> Terms & Conditions</a>
+          </div>
+          <div class="footer-link">
+            <a href="disclaimer.html"> Disclaimer</a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="copyright">
+            <p>Copyright</p>
+            <p>&#169;</p>
+            <p>2026</p>
+            <p>NutriWhirlgoss</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+ 
+      document.addEventListener("DOMContentLoaded", function () {
+        const accordions = document.querySelectorAll(".accordion-header");
+        accordions.forEach((accordion) => {
+          accordion.addEventListener("click", function () {
+            const content = this.nextElementSibling;
+            content.classList.toggle("show");
+
+            const allContents = document.querySelectorAll(".accordion-content");
+            allContents.forEach((item) => {
+              if (item !== content && item.classList.contains("show")) {
+                item.classList.remove("show");
+              }
+            });
+          });
+        });
+      });
+    </script>
+     
+     
+    
+  </body>
+</html>
+
